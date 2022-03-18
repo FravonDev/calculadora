@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+:root{
+    --dark-color-bg: #121212;
+    --dark-primary-color: #1E1E1E;
+    --dark-secondary-color: #BB86FC;
+    --dark-text-color: #E0E0E0;
+}
+
+body{  
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    background-color: var(--dark-color-bg);
+    color: var(--dark-text-color);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container{
+
+  background-color: var(--dark-primary-color)
+}
+
+
