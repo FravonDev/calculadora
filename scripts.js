@@ -4,44 +4,45 @@ document.addEventListener("DOMContentLoaded", () => {
         var result = 0;
         var expression = [];
 
-        // number_1.addEventListener("click", ()=>{
-        //     console.log(parseInt(number_1.value));
-        //     result += parseInt(number_1.value);
-        // });
-
 
     // loop through numbers to get their values 
     while (true) {
         let i = 0
-        for(i in range(0,10)){
+        let j = 0
+
+        // iterate through numbers
+        for (i in range(1,10)){
             let number = document.getElementById(`number-${i}`);
             console.log(number);
             number.addEventListener('click', ()=>{
                 expression += number.value;
                 resultLabel.value = expression;
-                
-                // the operators section
-                if(''){
+            });
+        }
 
-                }
-            })
+        // iterate through operation signals
+        for (j in range(1,4)){
+            let operator = document.getElementById(`operation-${j}`);
+            console.log(operator);
+
+            operator.addEventListener('click', ()=>{
+                expression += operator.value;
+                resultLabel.value = expression;
+
+            });
         }
         break
     }
     });
 
-// se apenas numeros forem colocados continue fazendo a concat dos numeros,
-// caso seja um sinal efetue a operação e logo depois
-
 
 function calculate(value1, operator, value2) {
-
-
+    
     switch (operator) {
         case '+':
             result = value1 + value2
             break
-        case '-':
+        case '-': 
             result = value1 - value2 
             break
         case '*':
