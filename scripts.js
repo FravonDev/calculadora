@@ -1,18 +1,8 @@
 // Execute the scripts when the content of the page are completely loaded
 document.addEventListener("DOMContentLoaded", () => {
-        // declare all the variables
-        // const number_0 = document.getElementById("number-0");
-        // const number_1 = document.getElementById("number-1");
-        // const number_2 = document.getElementById("number-2");
-        // const number_3 = document.getElementById("number-3");
-        // const number_4 = document.getElementById("number-4");
-        // const number_5 = document.getElementById("number-5");
-        // const number_6 = document.getElementById("number-6");
-        // const number_7 = document.getElementById("number-7");
-        // const number_8 = document.getElementById("number-8");
-        // const number_9 = document.getElementById("number-9");
-
+        const resultLabel = document.getElementById('result');
         var result = 0;
+        var expression = [];
 
         // number_1.addEventListener("click", ()=>{
         //     console.log(parseInt(number_1.value));
@@ -23,15 +13,78 @@ document.addEventListener("DOMContentLoaded", () => {
     // loop through numbers to get their values 
     while (true) {
         let i = 0
-        
-        for(i in range(0,9)){
-            let number = document.getElementById(`number-${i}`).value;
+        for(i in range(0,10)){
+            let number = document.getElementById(`number-${i}`);
             console.log(number);
+            number.addEventListener('click', ()=>{
+                expression += number.value;
+                resultLabel.value = expression;
+                
+                // the operators section
+                if(''){
+
+                }
+            })
         }
         break
-        
     }
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
