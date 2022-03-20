@@ -1,6 +1,8 @@
 // Execute the scripts when the content of the page are completely loaded
 document.addEventListener("DOMContentLoaded", () => {
         const resultLabel = document.getElementById('result');
+        const equals = document.getElementById('equals');
+
         var result = 0;
         var expression = [];
 
@@ -11,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let j = 0
 
         // iterate through numbers
-        for (i in range(1,10)){
+        for (i in range(0,10)){
             let number = document.getElementById(`number-${i}`);
             console.log(number);
             number.addEventListener('click', ()=>{
@@ -31,33 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             });
         }
+        function calculate(){
+            // TODO
+            // make the validations
+            if (resultLabel.value != '' && '' == ''){
+                resultLabel.value = eval(resultLabel.value);
+            };
+        }
+        equals.onclick = calculate;
         break
     }
     });
-
-
-function calculate(value1, operator, value2) {
-    
-    switch (operator) {
-        case '+':
-            result = value1 + value2
-            break
-        case '-': 
-            result = value1 - value2 
-            break
-        case '*':
-            result = value1 * value2
-            break
-        case '/':
-            result = value1 / value2 
-            break
-        default:
-            console.log('não implementado')
-            break
-    }
-
-    return result
-}
 
 function range(start, end) {
 	/* generate a range : [start, start+1, ..., end-1, end] */
