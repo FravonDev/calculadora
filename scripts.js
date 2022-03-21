@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const resultLabel = document.getElementById('result');
         const equals = document.getElementById('equals');
 
-
-
-
-
         var result = 0;
         var expression = [];
 

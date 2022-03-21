@@ -11,7 +11,8 @@
     --dark-color-bg: #121212;
     --dark-primary-color: #1E1E1E;
     --dark-secondary-color: #BB86FC;
-    --dark-text-color: #E0E0E0;
+    --dark-btn--color: #03DAC6;
+    --dark-text-color: rgba(255, 255, 255, 0.8);
 }
 
 body{  
@@ -21,12 +22,45 @@ body{
     color: var(--dark-text-color);
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 .container{
-
-  background-color: var(--dark-primary-color)
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 400px;
+  height: 300px;
+  align-items: center;
 }
  
+.content{
+    display: flex;
+    flex-direction: column;
+    
+}
 
+.numbers button:nth-child(-n+10){
+    color: red;
+    width: 30%;
+}
+
+.numbers button:nth-child(-n+9){
+    color: green;
+    width: 30%;
+    
+}
+
+.numbers button:nth-child(-n+6){
+    color: blue;
+    width: 30%;
+}
+
+.numbers button:nth-child(-n+3){
+    color: red;
+    width: 30%;
+}
