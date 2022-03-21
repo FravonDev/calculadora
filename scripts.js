@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const resultLabel = document.getElementById('result');
         const equals = document.getElementById('equals');
 
+
+
+
+
         var result = 0;
         var expression = [];
 
@@ -40,7 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 resultLabel.value = eval(resultLabel.value);
             };
         }
+       
         equals.onclick = calculate;
+        // clear the values
+        window.onload = (function () {
+            var clean = document.getElementById("c");
+
+            clean.onclick = function() {
+                resultLabel.value = '';
+            };
+        });
+
         break
     }
     });
