@@ -51,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
             var clean = document.getElementById("c");
 
             clean.onclick = function() {
-                resultLabel.value = '';
+                expression = '';
+                resultLabel.value = expression;
             };
         });
 
