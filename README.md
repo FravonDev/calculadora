@@ -1,3 +1,3 @@
 # calculadora
 
-Calculadora feita para fixar o conteúdo da Rocketseat sobre HTML, CSS e JavaScript utilizando `Try catch`
+Calculadora feita para treinar conteúdo aprendido  sobre HTML, CSS e JavaScript da Rocketseat.
