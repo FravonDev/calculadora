@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // make the validations
             if (resultLabel.value != '' && '' == ''){
                 resultLabel.value = eval(resultLabel.value);
+                expression = eval(resultLabel.value);
             };
         }
        
