@@ -4,12 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const equals = document.getElementById('equals');
         const delete_last = document.getElementById('del_last_number');
 
-
-
-
         var result = 0;
         var expression = [];
-
 
     // loop through numbers to get their values 
     while (true) {
