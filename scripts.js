@@ -2,6 +2,10 @@
 document.addEventListener("DOMContentLoaded", () => {
         const resultLabel = document.getElementById('result');
         const equals = document.getElementById('equals');
+        const delete_last = document.getElementById('del_last_number');
+
+
+
 
         var result = 0;
         var expression = [];
@@ -46,6 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // clear the values
         window.onload = (function () {
             var clean = document.getElementById("c");
+
+            delete_last.onclick = function(){
+                expression = expression.slice(0,-1)
+                resultLabel.value = expression
+            };
 
             clean.onclick = function() {
                 expression = '';
