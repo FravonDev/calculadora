@@ -10,10 +10,10 @@
 :root{
     --dark-color-bg: #121212;
     --dark-primary-color: rgba(0, 0, 0, 0.8);
-    --dark-secondary-color: #BB86FC;
+    --dark-secondary-color: #03DAC6;
     --dark-btn-primary: #3C4042;
     --dark-btn-secondary: rgb(31,31,31);
-    --dark-effect--color: #03DAC6;
+    --dark-effect--color: #BB86FC;
 }
 
 body{  
