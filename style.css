@@ -37,7 +37,13 @@ body{
   border-radius: 15px;
   padding: 15px;
 }
+
+
 #equals{
+    position: absolute;
+    width: 106px;
+    top: 82%;
+    left: 51%;
     background-color:var(--dark-secondary-color);
 }
 .botao{
@@ -52,6 +58,13 @@ body{
 }
 .botao:hover{
     background-color: black;
+}
+#c{
+    position: absolute;
+    width: 106px;
+    top: 24%;
+    right: 7%;
+
 }
 #result{
     background-color: white;
