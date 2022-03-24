@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 resultLabel.value = expression;
             };
         });
-
         break
     }
     });
